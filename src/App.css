@@ -1,0 +1,132 @@
+body{
+    background:url("../public//wall.jpg");
+    /* background: linear-gradient(skyblue,white); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.CreateStudents{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgba(135, 206, 235,0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+    height: 100vh;
+    width: 150vh;
+    margin: 25px;
+}
+.ShowStudents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 125px;
+}
+
+.Formcreate{
+    padding: 12px;
+    margin: 12px;
+}
+
+.split{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+table tr td{
+    font-size: 20px;
+    padding: 25px;
+    border: 2px solid white;
+}
+
+table tr th{
+    font-size: 25px;
+    padding: 30px;
+    border: 2px solid white;
+
+}
+
+table{
+    padding: 12px;
+    margin: 25px;
+    border-radius: 25px;
+    background: rgb(135, 206, 235,0.5);
+    backdrop-filter: blur(12px);
+}
+
+table tr td:nth-child(n+1){
+    color:black;
+}
+
+#head-show{
+    font-size: 50px;
+    padding: 12px;
+    background: linear-gradient(black,skyblue,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#form-select{
+    width: 200px;
+    height: 50px;
+    padding: 12px;
+    margin-bottom: 50px;
+}
+
+
+
+@media (max-width:1200px) {
+    table{
+        margin: 5px;
+    }
+    table tr td{
+        padding:15px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    table tr th{
+        padding:15px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    .CreateStudents{
+        width: auto;
+        margin: 10px;
+        padding: 0px;
+    }
+    #head-show{
+        background: linear-gradient(black,skyblue,grey);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+@media (max-width:600px) {
+    table{
+        margin: 0px;
+        border-radius: 12px;
+        max-width: 100%;
+    }
+    table tr td{
+        padding:10px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    table tr th{
+        padding:10px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .CreateStudents{
+        width: auto;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
